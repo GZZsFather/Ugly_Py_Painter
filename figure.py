@@ -20,6 +20,7 @@ class Line():
         self.func = self.DDA
 
     def draw(self,start,end,func):
+        self.func = func    #bug here if not set the func value this way this function will use DDA all the time 
         self.func(start,end)
 
     #Interface for setting colors
